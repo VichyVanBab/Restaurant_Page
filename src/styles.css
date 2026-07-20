@@ -1,3 +1,87 @@
+:root{
+    --h1-color : #cf3823;
+    --body-bg-color: #fafad2;
+    --border-red: #ff0000;
+    --border-blue: #0000ff;
+}
 body{
-    background-color: lightgoldenrodyellow;
+    height: 100vh;
+    background-color: var(--body-bg-color);
+    background-image: url(images/haitian-flag.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.homeClass{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 23px;
+    width: 700px;
+    height: 500px;
+    border-left: 2px solid var(--border-red);
+    border-right: 2px solid var(--border-blue);
+    border-bottom: 6px solid var(--border-red);
+    border-top: 6px solid var(--border-blue);
+    background-color: rgba(22, 2, 1, 0.274);
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+}
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 52px;
+}
+h1{
+    font-size: 2rem;
+    color: var(--h1-color);
+}
+.flexDiv{
+    display: flex;
+    flex-direction: column;
+
+}
+.welc{
+    align-self: center;
+}
+.menu{
+    background-color: rgba(54, 12, 12, 0.233);
+    margin-top: 15px;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 500px 500px ;
+    grid-template-rows: 200px 200px;
+    align-content: center;
+}
+.cardBlock{
+    display: flex;
+    justify-content: center;
+    border: 1px solid pink;
+    border-radius: 12px;
+}
+h3{
+    color: wheat;
+}
+
+button{
+    padding: 2px 16px;
+    border: none;
+    background-color: #ca2020;
+    border-radius: 6px;
+    color: rgba(243, 238, 238, 0.993);
+}
+button:hover{
+    cursor: pointer;
+    background-color: #ff0000;
+    color: white;
 }
