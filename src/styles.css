@@ -1,8 +1,11 @@
 :root{
-    --h1-color : #cf3823;
+    --h1-color : #f5deb3;
     --body-bg-color: #fafad2;
     --border-red: #ff0000;
     --border-blue: #0000ff;
+    --red-color: #ff0000;
+    --welc-txt-color: #f5deb3;
+    --btn-bg-color: #f5deb3;
 }
 body{
     height: 100vh;
@@ -53,6 +56,8 @@ h1{
 }
 .welc{
     align-self: center;
+    color: var(--welc-txt-color);
+    font-style: italic;
 }
 .menu{
     background-color: rgba(54, 12, 12, 0.233);
@@ -65,9 +70,16 @@ h1{
 }
 .cardBlock{
     display: flex;
-    justify-content: center;
-    border: 1px solid pink;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid;
+    border-top: 4px solid rgb(3, 71, 94);
+    border-bottom: 4px solid rgb(153, 41, 41);
     border-radius: 12px;
+}
+.cardBlock p{
+    font-style: italic;
+
 }
 h3{
     color: wheat;
@@ -76,12 +88,28 @@ h3{
 button{
     padding: 2px 16px;
     border: none;
-    background-color: #ca2020;
+    background-color: var(--btn-bg-color);
     border-radius: 6px;
-    color: rgba(243, 238, 238, 0.993);
+    color: #333333;
 }
 button:hover{
     cursor: pointer;
-    background-color: #ff0000;
+    background-color: #0000ff;
     color: white;
 }
+p{
+    color: #d4ced8;
+}
+.img{
+    width: 300px;
+    height: 120px;
+    border: 1px solid white;
+    border-radius: 12px;
+}
+ .dirikole{
+    width: 200px;
+    height: 200px;
+    /* border: 3px solid wheat; */
+    border-radius: 12px;
+    /* background-color: #b3b35241; */
+ }
